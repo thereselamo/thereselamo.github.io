@@ -1,0 +1,164 @@
+
+
+
+body {
+    font: 1em/1.67 'Open Sans', Arial, Sans-serif;
+    margin: 0;
+    background: #e9e9e9;
+    background-image: url(items/svalbard/IMG_7217_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: whitesmoke;
+}
+
+header {
+    width: 100%;
+    height: 3em;
+    background-color: transparent;
+}
+
+.container3 {
+    position: fixed;
+    width: 100%;
+    height: 6em;
+    margin: auto;
+    background-color: white;
+    
+}
+.logo {
+    position: absolute;
+    top: 20%; 
+    left:50%;
+    transform: translateX(-50%);
+}
+
+ul {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul li {
+    font-family: Helvetica;
+    font-style: thin;
+    font-size: 0.9em;
+    color:white;
+    float: left;
+    text-align: left;
+    padding: 3px;
+    list-style-type: none;  
+    text-decoration: none;
+    padding-right: 50px;
+    position: relative;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    color:white;
+}
+/* Here is the copy*/
+img, iframe {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+    margin-top: -2%;
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    margin-top: 10%;
+}
+
+.item {
+    display: inline-block;
+    background: transparent; /*makes the t-logo transparent*/
+    padding: 0em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0 #ccc;
+    
+}
+
+
+.item {
+   opacity: 1;
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;
+}
+
+.item:hover {
+      opacity: 0.5;
+}
+
+
+/*
+img.fade {
+
+  filter: gray;  
+  -webkit-filter: grayscale(100%); 
+}
+
+img.fade:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+*/
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
